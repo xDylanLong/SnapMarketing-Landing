@@ -7,7 +7,7 @@
 ## 范围
 
 - 保留当前 `header`、单一 hero、流程提示、footer 和安装弹窗结构。
-- 移除页面中以 `DeepSeek Harness` 作为主品牌/产品标题的表达，统一使用 `SnapMarketing`。
+- 移除页面中以 `DeepSeek Harness` 作为主品牌/产品标题的表达，统一使用 `SnapMarketing`；安装弹框标题保留用户指定的 `DeepSeekHarness` 会话指令。
 - 使用用户提供的 logo 作为导航品牌图、页面产品视觉和 favicon / apple-touch-icon 的源文件。
 - 保留当前 GitHub 入口和安装弹窗交互，不新增产品能力或未经确认的外部链接。
 - 不添加 FAQ、场景卡片、功能区块或其他纵向内容。
@@ -43,7 +43,7 @@
 
 ## 验收标准
 
-- 页面中不再出现作为主产品名的 `DeepSeek Harness` 或旧的 SnapMarketing 安装表述。
+- 页面中不再出现作为主产品名的 `DeepSeek Harness`；安装弹框标题必须显示为“把下述内容发送给 DeepSeekHarness 任意会话”。
 - 直接打开 `index.html` 仍可正常显示，当前安装弹窗和 GitHub 入口可用。
 - `<head>` 包含 title、description、robots、canonical、OG、Twitter、favicon、apple-touch-icon 和 JSON-LD。
 - logo 在桌面端、移动端、favicon 和社交分享图片路径上均指向仓库内资源。

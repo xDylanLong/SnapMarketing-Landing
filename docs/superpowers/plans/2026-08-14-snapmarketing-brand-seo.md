@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - Keep the current `header`, single hero, process rail, footer, and install modal structure.
-- Use `SnapMarketing` as the only visible website/product brand; remove `DeepSeek Harness` from page copy and metadata.
+- Use `SnapMarketing` as the only visible website/product brand; keep the user-specified `DeepSeekHarness` recipient wording only in the install modal title.
 - Do not add FAQ, feature cards, scenario sections, or other vertical content blocks.
 - Use the supplied logo from `/var/folders/_4/7r7073hj4nb2_mfwh29hb_w40000gp/T/codex-clipboard-93279474-f34a-4b34-94ae-537df55faa25.png` as a repository-local asset.
 - Use `https://xdylanlong.github.io/SnapMarketing-Landing/` as the current canonical/public URL.
@@ -104,7 +104,7 @@ Add one `WebSite` JSON-LD block whose `name`, `url`, `description`, and `inLangu
 
 - [ ] **Step 2: Replace all old visible product naming**
 
-Update the brand label, eyebrow, headline, description, product preview toolbar, footer note, install button, install modal title, and copy instruction so no visible copy uses `DeepSeek Harness` or the unrelated `AI 工作流` positioning. Restore the previous plugin-install copy: `一键拖拽安装热门插件`, `让 SnapMarketing 装插件这件事，变得更简单。将 UI 插件拖入指定安装位置，也可以轻松安装其他类型的插件。`, and `安装 SnapMarketing`. Keep the current three process labels and GitHub destination.
+Update the brand label, eyebrow, headline, description, product preview toolbar, footer note, install button, and copy instruction so no visible copy uses `DeepSeek Harness` or the unrelated `AI 工作流` positioning. Set the install modal title exactly to `把下述内容发送给 DeepSeekHarness 任意会话`. Restore the previous plugin-install copy: `一键拖拽安装热门插件`, `让 SnapMarketing 装插件这件事，变得更简单。将 UI 插件拖入指定安装位置，也可以轻松安装其他类型的插件。`, and `安装 SnapMarketing`. Keep the current three process labels and GitHub destination.
 
 - [ ] **Step 3: Add local logo markup without changing the page structure**
 
