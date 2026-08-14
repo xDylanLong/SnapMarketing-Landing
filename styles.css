@@ -35,6 +35,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 body::before {
   position: fixed;
   inset: 0;
@@ -195,6 +199,9 @@ h1 em {
 }
 
 .button {
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
   display: inline-flex;
   min-height: 48px;
   align-items: center;
@@ -240,6 +247,133 @@ h1 em {
 .button-secondary:hover {
   border-color: rgba(255, 255, 255, 0.23);
   background: rgba(255, 255, 255, 0.06);
+}
+
+.modal-backdrop[hidden] {
+  display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  padding: 24px;
+  place-items: center;
+  background: rgba(4, 5, 10, 0.76);
+  backdrop-filter: blur(12px);
+}
+
+.install-modal {
+  position: relative;
+  width: min(520px, 100%);
+  padding: 32px;
+  border: 1px solid rgba(176, 167, 255, 0.27);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(28, 28, 47, 0.98), rgba(13, 14, 23, 0.98));
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.5), 0 0 70px rgba(106, 94, 255, 0.16);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--text);
+}
+
+.modal-close:focus-visible,
+.copy-button:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
+}
+
+.modal-eyebrow {
+  margin: 0 0 13px;
+  color: var(--accent-bright);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.install-modal h2 {
+  max-width: 360px;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  letter-spacing: -0.06em;
+  line-height: 1.15;
+}
+
+.install-modal > p:not(.modal-eyebrow):not(.copy-status) {
+  margin: 17px 0 22px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.install-instruction {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  padding: 13px;
+  border: 1px solid rgba(176, 167, 255, 0.17);
+  border-radius: 13px;
+  background: rgba(4, 5, 12, 0.55);
+}
+
+.install-instruction code {
+  min-width: 0;
+  flex: 1;
+  align-self: center;
+  color: #d9d5ff;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.copy-button {
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 9px 11px;
+  border: 1px solid rgba(176, 167, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(130, 117, 255, 0.15);
+  color: var(--accent-bright);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.copy-button:hover {
+  border-color: rgba(176, 167, 255, 0.5);
+  background: rgba(130, 117, 255, 0.25);
+}
+
+.copy-status {
+  min-height: 17px;
+  margin: 11px 0 0;
+  color: var(--accent-bright);
+  font-size: 11px;
 }
 
 .button-arrow {
@@ -485,6 +619,18 @@ h1 em {
   .site-footer {
     gap: 16px;
     line-height: 1.5;
+  }
+
+  .install-modal {
+    padding: 28px 20px 24px;
+  }
+
+  .install-instruction {
+    flex-direction: column;
+  }
+
+  .copy-button {
+    width: 100%;
   }
 }
 
