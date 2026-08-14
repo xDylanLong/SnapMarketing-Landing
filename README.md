@@ -20,4 +20,4 @@ Then open <http://127.0.0.1:4173>.
 
 ## License
 
-The project is open source. See the repository for the current license and contribution details.
+The repository is public. A project license and contribution guide will be added when the implementation is ready for external contributions.
