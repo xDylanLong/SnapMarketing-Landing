@@ -5,37 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="DeepSeek Harness 官方生态插件的发现与安装入口。"
+      content="SnapMarketing 让 DeepSeek Harness 插件安装更简单。支持 UI 插件及其他插件的一键拖拽安装。"
     />
     <meta name="theme-color" content="#090a0f" />
-    <title>DeepSeek Harness 插件中心</title>
+    <title>SnapMarketing · DeepSeek Harness 插件安装</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="DeepSeek Harness 插件中心首页">
+        <a class="brand" href="/" aria-label="SnapMarketing 首页">
           <span class="brand-mark" aria-hidden="true"><span></span></span>
-          <span class="brand-name">插件中心</span>
-        </a>
-        <a
-          class="header-link"
-          href="https://github.com/xDylanLong/SnapMarketing-Landing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>公开仓库</span>
-          <span aria-hidden="true">↗</span>
+          <span class="brand-name">SnapMarketing</span>
         </a>
       </header>
 
       <main class="hero">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> DeepSeek Harness 官方生态</p>
-          <h1>DeepSeek Harness 的<em>开放插件入口。</em></h1>
+          <p class="eyebrow"><span></span> SnapMarketing / PLUGIN INSTALL</p>
+          <h1>DeepSeek Harness 的插件安装，<em>一键拖拽即可完成。</em></h1>
           <p class="hero-description">
-            集中发现、了解并安装官方生态插件，让工具、Agent、工作流和界面能力更快接入 Harness。
+            让 DeepSeek Harness 装插件这件事，变得更简单。将 UI 插件拖入指定安装位置，也可以轻松安装其他类型的插件。
           </p>
 
           <div class="hero-actions">
@@ -44,7 +35,7 @@
               type="button"
               data-open-install
             >
-              <span>安装插件中心</span>
+              <span>安装 SnapMarketing</span>
               <span class="button-arrow" aria-hidden="true">↗</span>
             </button>
             <a
@@ -59,22 +50,30 @@
           </div>
         </div>
 
-        <div class="hero-orbit" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit-core">
-            <span class="core-line core-line-one"></span>
-            <span class="core-line core-line-two"></span>
-            <span class="core-dot"></span>
+        <div class="product-preview" role="img" aria-label="产品截图预留区域">
+          <div class="product-preview-window">
+            <div class="product-preview-toolbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <small>SnapMarketing</small>
+            </div>
+            <div class="product-preview-placeholder">
+              <span class="placeholder-icon" aria-hidden="true">＋</span>
+              <span>产品截图预留区域</span>
+              <small>PRODUCT SCREENSHOT</small>
+            </div>
           </div>
-          <span class="orbit-node node-one"></span>
-          <span class="orbit-node node-two"></span>
-          <span class="orbit-node node-three"></span>
+          <div class="drop-hint">
+            <span class="drop-hint-icon" aria-hidden="true">↓</span>
+            <span>
+              <strong>将 UI 插件拖入指定位置</strong>
+              <small>其他插件也可以一键安装</small>
+            </span>
+          </div>
         </div>
 
         <div class="hero-footer">
-          <p class="footer-note">从发现插件到开始使用，只有一个清晰入口。</p>
-          <ol class="process-list" aria-label="插件中心使用流程">
+          <p class="footer-note">让 DeepSeek Harness 装插件这件事，变得更简单。</p>
+          <ol class="process-list" aria-label="SnapMarketing 插件安装流程">
             <li class="process-step is-active">
               <span class="step-number">01</span>
               <span class="step-label">发现</span>
@@ -92,10 +91,7 @@
       </main>
 
       <footer class="site-footer">
-        <span>面向 DeepSeek Harness 社区构建。</span>
-        <a href="https://github.com/xDylanLong/SnapMarketing-Landing" target="_blank" rel="noreferrer">
-          SnapMarketing-Landing
-        </a>
+        <span>让 UI 插件更快进入工作流。</span>
       </footer>
     </div>
 
@@ -109,12 +105,12 @@
       >
         <button class="modal-close" type="button" data-close-install aria-label="关闭安装说明">×</button>
         <p class="modal-eyebrow">安装说明</p>
-        <h2 id="install-title">把插件接入 DeepSeek Harness</h2>
+        <h2 id="install-title">把插件安装到 DeepSeek Harness</h2>
         <p id="install-description">
-          复制下面这句话，粘贴到 DeepSeek Harness 的插件安装入口，即可根据 GitHub 仓库安装插件。
+          将 UI 插件拖入指定位置即可安装，其他类型的插件也同样支持。也可以复制下面的说明，交给你的安装助手。
         </p>
         <div class="install-instruction">
-          <code data-install-copy>根据这个 GitHub 仓库安装插件：https://github.com/xDylanLong/SnapMarketing</code>
+          <code data-install-copy>将这个插件拖入 DeepSeek Harness 的指定安装位置并完成安装。</code>
           <button class="copy-button" type="button" data-copy-install>复制说明</button>
         </div>
         <p class="copy-status" data-copy-status role="status" aria-live="polite"></p>
