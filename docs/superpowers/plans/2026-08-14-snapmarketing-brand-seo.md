@@ -78,8 +78,8 @@ git commit -m "feat: add SnapMarketing brand logo"
 Set the `<head>` to include these exact values:
 
 ```html
-<title>SnapMarketing｜AI 工作流与插件中心</title>
-<meta name="description" content="SnapMarketing 是一个更简单的 AI 工作流与插件入口，帮助你发现、安装并使用实用工具。" />
+<title>SnapMarketing · 插件安装中心</title>
+<meta name="description" content="SnapMarketing 让插件安装更简单。支持 UI 插件及其他插件的一键拖拽安装。" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#090a0f" />
 <link rel="canonical" href="https://xdylanlong.github.io/SnapMarketing-Landing/" />
@@ -87,15 +87,15 @@ Set the `<head>` to include these exact values:
 <link rel="apple-touch-icon" href="assets/snapmarketing-logo.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="SnapMarketing" />
-<meta property="og:title" content="SnapMarketing｜AI 工作流与插件中心" />
-<meta property="og:description" content="发现、安装并使用更实用的 AI 工作流与插件。" />
+<meta property="og:title" content="SnapMarketing · 插件安装中心" />
+<meta property="og:description" content="SnapMarketing 让插件安装更简单。支持 UI 插件及其他插件的一键拖拽安装。" />
 <meta property="og:url" content="https://xdylanlong.github.io/SnapMarketing-Landing/" />
 <meta property="og:image" content="https://xdylanlong.github.io/SnapMarketing-Landing/assets/snapmarketing-logo.png" />
 <meta property="og:image:alt" content="SnapMarketing 紫色鲸鱼产品 logo" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="SnapMarketing｜AI 工作流与插件中心" />
-<meta name="twitter:description" content="发现、安装并使用更实用的 AI 工作流与插件。" />
+<meta name="twitter:title" content="SnapMarketing · 插件安装中心" />
+<meta name="twitter:description" content="SnapMarketing 让插件安装更简单。支持 UI 插件及其他插件的一键拖拽安装。" />
 <meta name="twitter:image" content="https://xdylanlong.github.io/SnapMarketing-Landing/assets/snapmarketing-logo.png" />
 <meta name="twitter:image:alt" content="SnapMarketing 紫色鲸鱼产品 logo" />
 ```
@@ -104,7 +104,7 @@ Add one `WebSite` JSON-LD block whose `name`, `url`, `description`, and `inLangu
 
 - [ ] **Step 2: Replace all old visible product naming**
 
-Update the brand label, eyebrow, headline, description, product preview toolbar, footer note, install button, install modal title, and copy instruction so no visible copy uses `DeepSeek Harness`. Keep the current three process labels and GitHub destination.
+Update the brand label, eyebrow, headline, description, product preview toolbar, footer note, install button, install modal title, and copy instruction so no visible copy uses `DeepSeek Harness` or the unrelated `AI 工作流` positioning. Restore the previous plugin-install copy: `一键拖拽安装热门插件`, `让 SnapMarketing 装插件这件事，变得更简单。将 UI 插件拖入指定安装位置，也可以轻松安装其他类型的插件。`, and `安装 SnapMarketing`. Keep the current three process labels and GitHub destination.
 
 - [ ] **Step 3: Add local logo markup without changing the page structure**
 
