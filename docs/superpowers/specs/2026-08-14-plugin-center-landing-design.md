@@ -32,7 +32,7 @@ Create a one-screen public landing page for DeepSeek Harness Plugin Center that 
 
 - Use plain `index.html` and `styles.css`; no runtime dependency or build step.
 - Use semantic landmarks, real links, visible focus states, reduced-motion support, and responsive CSS.
-- Point GitHub links to `https://github.com/ThawingX/SnapMarketing-Landing`.
+- Point GitHub links to `https://github.com/xDylanLong/SnapMarketing-Landing`.
 - Point the install CTA to the repository `#installation` anchor so the page never claims an unverified package URL.
 
 ## Acceptance criteria

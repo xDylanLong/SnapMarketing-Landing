@@ -13,7 +13,7 @@
 - Keep the experience to one landing screen; do not add marketplace cards, search, categories, or extra product pages.
 - Use the approved dark near-black / indigo-violet visual direction.
 - Keep GitHub and install links usable without JavaScript.
-- Point repository links to `https://github.com/ThawingX/SnapMarketing-Landing`.
+- Point repository links to `https://github.com/xDylanLong/SnapMarketing-Landing`.
 - Keep the install CTA honest by linking to the repository `#installation` instructions until a real Harness install URL exists.
 
 ---
@@ -77,7 +77,7 @@ git commit -m "docs: add project and installation notes"
 - Modify: `README.md` only if the installation anchor or instructions are missing.
 
 **Interfaces:**
-- The published repository is `https://github.com/ThawingX/SnapMarketing-Landing`.
+- The published repository is `https://github.com/xDylanLong/SnapMarketing-Landing`.
 
 - [ ] **Step 1: Run repository checks**
 
@@ -85,8 +85,8 @@ Run `git status --short --branch`, `rg -n "github.com/ThawingX/SnapMarketing-Lan
 
 - [ ] **Step 2: Create the public GitHub repository and push `main`**
 
-Run `gh repo create ThawingX/SnapMarketing-Landing --public --source=. --remote=origin --push`. Expected result: GitHub reports the repository URL and the local `main` branch is pushed.
+Run `gh repo create xDylanLong/SnapMarketing-Landing --public --source=. --remote=origin --push`. Expected result: GitHub reports the repository URL and the local `main` branch is pushed.
 
 - [ ] **Step 3: Verify the remote state**
 
-Run `gh repo view ThawingX/SnapMarketing-Landing --json name,isPrivate,url,defaultBranchRef` and `git status --short --branch`. Expected result: `isPrivate` is `false`, the URL is the expected repository, and the branch is clean and tracking `origin/main`.
+Run `gh repo view xDylanLong/SnapMarketing-Landing --json name,isPrivate,url,defaultBranchRef` and `git status --short --branch`. Expected result: `isPrivate` is `false`, the URL is the expected repository, and the branch is clean and tracking `origin/main`.
