@@ -42,3 +42,11 @@ Create a one-screen public landing page for DeepSeek Harness Plugin Center that 
 - There is no marketplace UI or second landing section.
 - Links have meaningful labels and work without JavaScript.
 - Layout remains usable at mobile widths and with reduced motion enabled.
+
+## Chinese copy and install dialog update
+
+- Change the visible landing copy to Simplified Chinese while keeping the product name `DeepSeek Harness Plugin Center` unchanged.
+- Replace the install link with a button that opens an accessible modal dialog.
+- The dialog shows the natural-language instruction `根据这个 GitHub 仓库安装插件：https://github.com/xDylanLong/SnapMarketing` in a copyable code block.
+- Provide copy, close, backdrop-click, and Escape-key behavior. Copy feedback must be visible without leaving the page.
+- Keep the page as one screen; the dialog is an interaction layer, not a second page or marketplace.
