@@ -1,13 +1,13 @@
-# SnapMarketing 插件中心
+# dsh-snapmarketing landing
 
-DeepSeek Harness 官方生态插件的官网索引页，集中提供项目介绍、插件入口和相关资源链接。
+dsh-snapmarketing 是面向 DeepSeek Harness 的营销插件入口，集中提供产品介绍、安装入口和相关资源链接。
 
 本仓库只负责官网页面展示，不承载插件安装包，也不在这里维护安装流程。
 
 ## 页面索引
 
-- [SnapMarketing 官网页面](https://github.com/xDylanLong/SnapMarketing-Landing)
-- [SnapMarketing 插件仓库（GitHub）](https://github.com/xDylanLong/SnapMarketing)
+- [dsh-snapmarketing 官网页面](https://github.com/xDylanLong/dsh-snapmarketing-landing)
+- [dsh-snapmarketing 插件仓库（GitHub）](https://github.com/xDylanLong/SnapMarketing)
 
 ## 本地预览
 

@@ -38,7 +38,7 @@ async function copyInstallInstruction() {
     textArea.remove();
   }
 
-  copyStatus.textContent = '已复制，可以粘贴到 DeepSeek Harness。';
+  copyStatus.textContent = '已复制，可以粘贴到 DeepSeekHarness。';
   copyButton.textContent = '已复制';
   window.setTimeout(() => {
     copyButton.textContent = '复制';

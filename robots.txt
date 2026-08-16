@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xdylanlong.github.io/SnapMarketing-Landing/sitemap.xml
+Sitemap: https://xdylanlong.github.io/dsh-snapmarketing-landing/sitemap.xml
