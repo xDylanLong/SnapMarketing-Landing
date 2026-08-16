@@ -5,6 +5,8 @@ const copyButton = document.querySelector('[data-copy-install]');
 const copyTarget = document.querySelector('[data-install-copy]');
 const copyStatus = document.querySelector('[data-copy-status]');
 const languageToggle = document.querySelector('[data-language-toggle]');
+const commandCopyButton = document.querySelector('[data-copy-command]');
+const commandCopyTarget = document.querySelector('[data-command-copy]');
 
 const translations = {
   en: {
@@ -13,7 +15,8 @@ const translations = {
     eyebrow: 'DSH / PLUGIN INSTALLATION HUB',
     heroTitle: 'inside DeepSeek Harness',
     heroDescription: '<strong>dsh-snapmarketing</strong> is the plugin installation hub for DeepSeek Harness — discover, install, and use plugins from one clear entry point.',
-    installButton: 'Install dsh-snapmarketing',
+    installButton: 'Installation details',
+    installHint: 'Then open dsh web → Settings → Plugin Market.',
     githubButton: 'View on GitHub',
     footerNote: 'A simpler way to bring plugins into your workflow.',
     stepDiscover: 'Discover',
@@ -22,6 +25,8 @@ const translations = {
     siteFooter: 'dsh-snapmarketing · Plugin installation hub for DeepSeek Harness.',
     modalTitle: 'Send the following to any DeepSeekHarness session',
     installInstruction: 'Install dsh-snapmarketing from this GitHub repository: https://github.com/xDylanLong/SnapMarketing',
+    commandCopyButton: 'Copy',
+    commandCopyStatus: 'Command copied.',
     copyButton: 'Copy',
     copyStatus: 'Copied. Paste it into DeepSeekHarness.',
     languageLabel: 'Switch to Chinese',
@@ -39,7 +44,8 @@ const translations = {
     eyebrow: 'DSH / 插件安装中心',
     heroTitle: 'DeepSeek Harness 插件中心',
     heroDescription: '<strong>dsh-snapmarketing</strong> 是面向 DeepSeek Harness 的插件安装中心，从一个清晰入口发现、安装并使用插件。',
-    installButton: '安装 dsh-snapmarketing',
+    installButton: '安装说明',
+    installHint: '然后打开 dsh web → Settings → Plugin Market。',
     githubButton: '查看 GitHub',
     footerNote: '让插件更简单地进入你的工作流。',
     stepDiscover: '发现',
@@ -48,6 +54,8 @@ const translations = {
     siteFooter: 'dsh-snapmarketing · DeepSeek Harness 插件安装中心。',
     modalTitle: '把下述内容发送给 DeepSeekHarness 任意会话',
     installInstruction: '根据这个 GitHub 仓库安装一下 dsh-snapmarketing：https://github.com/xDylanLong/SnapMarketing',
+    commandCopyButton: '复制',
+    commandCopyStatus: '命令已复制。',
     copyButton: '复制',
     copyStatus: '已复制，可以粘贴到 DeepSeekHarness。',
     languageLabel: '切换为英文',
@@ -88,10 +96,12 @@ function applyLanguage(language) {
   document.querySelector('meta[name="description"]').content = copy.metaDescription;
   document.querySelector('[data-language-toggle]').textContent = copy.languageButton;
   document.querySelector('[data-language-toggle]').setAttribute('aria-label', copy.languageLabel);
+  commandCopyButton.textContent = copy.commandCopyButton;
   document.querySelector('.brand').setAttribute('aria-label', copy.homeLabel);
   document.querySelector('.product-preview').setAttribute('aria-label', copy.previewLabel);
   document.querySelector('.product-preview-image').setAttribute('alt', copy.previewAlt);
   document.querySelector('.process-list').setAttribute('aria-label', copy.processLabel);
+  document.querySelector('.install-command').setAttribute('aria-label', language === 'zh' ? '安装命令' : 'Install command');
   document.querySelector('.header-nav').setAttribute('aria-label', copy.primaryNav);
   document.querySelector('.modal-close').setAttribute('aria-label', copy.closeModal);
 
@@ -130,9 +140,33 @@ async function copyInstallInstruction() {
   }, 1800);
 }
 
+async function copyInstallCommand() {
+  const text = commandCopyTarget.textContent.trim();
+
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.setAttribute('readonly', '');
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.append(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    textArea.remove();
+  }
+
+  commandCopyButton.textContent = currentLanguage === 'zh' ? '已复制' : 'Copied';
+  window.setTimeout(() => {
+    commandCopyButton.textContent = translations[currentLanguage].commandCopyButton;
+  }, 1800);
+}
+
 openButton.addEventListener('click', openInstallModal);
 closeButton.addEventListener('click', closeInstallModal);
 copyButton.addEventListener('click', copyInstallInstruction);
+commandCopyButton.addEventListener('click', copyInstallCommand);
 languageToggle.addEventListener('click', () => {
   applyLanguage(currentLanguage === 'en' ? 'zh' : 'en');
 });

@@ -4,6 +4,14 @@ dsh-snapmarketing is the plugin installation hub for DeepSeek Harness, with one 
 
 本仓库只负责官网页面展示，不承载插件安装包，也不在这里维护安装流程。
 
+## Install
+
+```bash
+dsh plugin --profile web add @snapmarketing/dsh-plugin-center
+```
+
+Then open `dsh web` → Settings → Plugin Market.
+
 ## 页面索引
 
 - [dsh-snapmarketing 官网页面](https://github.com/xDylanLong/dsh-snapmarketing-landing)

@@ -8,8 +8,10 @@
   --muted: #626b78;
   --faint: #9ca4b0;
   --line: #e2e5e9;
-  --accent: #c94f43;
-  --accent-soft: #f9e8e5;
+  --accent: #685ce8;
+  --accent-strong: #8074f5;
+  --accent-soft: #eeecff;
+  --accent-deep: #39318e;
   --deep: #111923;
 }
 
@@ -149,7 +151,7 @@ button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--accent-strong);
 }
 
 h1 {
@@ -172,7 +174,7 @@ h1 em {
 }
 
 h1 em {
-  color: var(--accent);
+  color: var(--accent-strong);
   font-style: normal;
 }
 
@@ -221,11 +223,11 @@ h1 em {
 .button-primary {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 9px 22px rgba(201, 79, 67, 0.18);
+  box-shadow: 0 9px 22px rgba(104, 92, 232, 0.2);
 }
 
 .button-primary:hover {
-  background: #b84338;
+  background: var(--accent-deep);
 }
 
 .button-secondary {
@@ -244,7 +246,7 @@ h1 em {
 .header-link:focus-visible,
 .language-toggle:focus-visible,
 .site-footer a:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-strong);
   outline-offset: 4px;
 }
 
@@ -280,6 +282,60 @@ h1 em {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.install-command {
+  display: flex;
+  width: min(560px, 100%);
+  min-height: 58px;
+  align-items: center;
+  gap: 14px;
+  margin: 31px auto 0;
+  padding: 10px 11px 10px 18px;
+  border: 1px solid rgba(128, 116, 245, 0.25);
+  border-radius: 13px;
+  background: #111923;
+  box-shadow: 0 17px 34px rgba(38, 34, 102, 0.12), 0 0 0 5px rgba(238, 236, 255, 0.7);
+  text-align: left;
+}
+
+.install-command code {
+  min-width: 0;
+  flex: 1;
+  color: #f3f1ff;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.command-copy-button {
+  flex: 0 0 auto;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  background: var(--accent-strong);
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.command-copy-button:hover {
+  background: #978eff;
+  transform: translateY(-1px);
+}
+
+.command-copy-button:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+
+.install-hint {
+  margin: 15px auto 0;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .hero-footer {
@@ -397,7 +453,7 @@ h1 em {
 
 .modal-close:focus-visible,
 .copy-button:focus-visible {
-  outline: 2px solid #e98272;
+  outline: 2px solid var(--accent-strong);
   outline-offset: 3px;
 }
 
@@ -445,13 +501,13 @@ h1 em {
 }
 
 .copy-button:hover {
-  background: #b84338;
+  background: var(--accent-deep);
 }
 
 .copy-status {
   min-height: 17px;
   margin: 11px 0 0;
-  color: #e98272;
+  color: var(--accent-strong);
   font-size: 11px;
 }
 
@@ -494,7 +550,7 @@ h1 em {
   }
 
   .hero-actions {
-    margin-top: 26px;
+    margin-top: 27px;
   }
 
   .button {
@@ -507,6 +563,27 @@ h1 em {
 
   .product-preview-window {
     border-radius: 13px;
+  }
+
+  .install-command {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .install-command code {
+    font-size: 11px;
+  }
+
+  .command-copy-button {
+    width: 100%;
+  }
+
+  .install-hint {
+    max-width: 320px;
+    line-height: 1.6;
   }
 
   .hero-footer {
