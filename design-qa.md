@@ -23,7 +23,7 @@ The implementation adopts the reference's light canvas, centered hero hierarchy,
 ### Focused regions
 
 - Header: brand remains left-aligned; GitHub and the new language toggle are right-aligned on desktop, while the GitHub link is hidden on mobile to preserve the reference's compact header behavior.
-- Hero: English is the initial state, with the product name on the first line and the logo-purple `inside DeepSeek Harness` line below it. Chinese toggling changes the descriptive copy, buttons, footer, process labels, modal title, install instruction, and accessibility labels.
+- Hero: English is the initial state, with the product name on the first line and the logo-purple `for marketing automation` line below it. Chinese toggling changes the descriptive copy, buttons, footer, process labels, modal title, install instruction, and accessibility labels.
 - Install command: the dark command card mirrors the reference interaction with a copy button, uses the real DSH package command, and changes to the Chinese hint/button label when the language toggle is used.
 - Product preview: the existing dsh-snapmarketing screenshot remains the visual product proof, framed with the reference's dark rounded presentation.
 

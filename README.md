@@ -1,6 +1,6 @@
 # dsh-snapmarketing landing
 
-dsh-snapmarketing is the plugin installation hub for DeepSeek Harness, with one clear entry point for product information, installation, and related resources.
+dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness, growing into a fast collection of tools for marketing automation.
 
 本仓库只负责官网页面展示，不承载插件安装包，也不在这里维护安装流程。
 
