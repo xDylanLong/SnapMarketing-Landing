@@ -12,7 +12,7 @@
 - Mobile capture: `/tmp/dsh-snapmarketing-implementation-mobile.png` (375 × 1250 px JPEG; implementation viewport 390 × 844 CSS px; device scale factor 1)
 - Desktop state: English default.
 - Mobile state: English default.
-- Additional state: Chinese toggle, translated headline/eyebrow, and Chinese installation modal verified through the browser DOM.
+- Additional state: Chinese toggle, translated headline/eyebrow, and localized command card verified through the browser DOM.
 
 ## Comparison
 
@@ -23,7 +23,7 @@ The implementation adopts the reference's light canvas, centered hero hierarchy,
 ### Focused regions
 
 - Header: brand remains left-aligned; GitHub and the new language toggle are right-aligned on desktop, while the GitHub link is hidden on mobile to preserve the reference's compact header behavior.
-- Hero: English is the initial state, with the product name on the first line and the logo-purple `for marketing automation` line below it. Chinese toggling changes the descriptive copy, buttons, footer, process labels, modal title, install instruction, and accessibility labels.
+- Hero: English is the initial state, with the product name on the first line and the logo-purple `for marketing automation` line below it. Chinese toggling changes the descriptive copy, command hint, footer, process labels, and accessibility labels.
 - Install command: the dark command card mirrors the reference interaction with a copy button, uses the real DSH package command, and changes to the Chinese hint/button label when the language toggle is used.
 - Product preview: the existing dsh-snapmarketing screenshot remains the visual product proof, framed with the reference's dark rounded presentation.
 
@@ -32,9 +32,7 @@ The implementation adopts the reference's light canvas, centered hero hierarchy,
 - English loads by default.
 - `中文` changes the full visible copy to Chinese and changes its accessible label to `切换为英文`.
 - The command card's `Copy` button changes to `Copied` after copying the verified install command.
-- `Installation details` / `安装说明` opens the modal.
-- The modal copy button updates the status message in the active language.
-- The close button dismisses the modal and restores focus behavior.
+- The previous middle `Installation details` and `View on GitHub` CTA buttons are removed; installation now stays focused on the command card, while GitHub remains available in the header.
 - Browser console: no warnings or errors observed.
 
 ## Findings

@@ -191,74 +191,12 @@ h1 em {
   font-weight: 800;
 }
 
-.hero-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 31px;
-}
-
-.button {
-  appearance: none;
-  display: inline-flex;
-  min-height: 45px;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 0 17px 0 19px;
-  border: 1px solid transparent;
-  border-radius: 9px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  transition: border-color 180ms ease, background 180ms ease, color 180ms ease, transform 180ms ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button-primary {
-  background: var(--accent);
-  color: #fff;
-  box-shadow: 0 9px 22px rgba(104, 92, 232, 0.2);
-}
-
-.button-primary:hover {
-  background: var(--accent-deep);
-}
-
-.button-secondary {
-  border-color: var(--line);
-  background: var(--surface);
-  color: var(--text);
-}
-
-.button-secondary:hover {
-  border-color: #c7ccd3;
-  background: #fff;
-}
-
-.button:focus-visible,
 .brand:focus-visible,
 .header-link:focus-visible,
 .language-toggle:focus-visible,
 .site-footer a:focus-visible {
   outline: 2px solid var(--accent-strong);
   outline-offset: 4px;
-}
-
-.button-arrow {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.button-secondary .button-arrow {
-  color: var(--faint);
 }
 
 .product-preview {
@@ -403,114 +341,6 @@ h1 em {
   transition: color 180ms ease;
 }
 
-.modal-backdrop[hidden] {
-  display: none;
-}
-
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  display: grid;
-  padding: 24px;
-  place-items: center;
-  background: rgba(17, 25, 35, 0.62);
-  backdrop-filter: blur(12px);
-}
-
-.install-modal {
-  position: relative;
-  width: min(560px, 100%);
-  padding: 32px;
-  border: 1px solid #293442;
-  border-radius: 17px;
-  background: var(--deep);
-  box-shadow: 0 24px 90px rgba(17, 25, 35, 0.3);
-}
-
-.modal-close {
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: 1px solid #33404e;
-  border-radius: 50%;
-  background: transparent;
-  color: #9ba5b1;
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 1;
-  transition: border-color 180ms ease, color 180ms ease;
-}
-
-.modal-close:hover,
-.modal-close:focus-visible {
-  border-color: #708091;
-  color: #fff;
-}
-
-.modal-close:focus-visible,
-.copy-button:focus-visible {
-  outline: 2px solid var(--accent-strong);
-  outline-offset: 3px;
-}
-
-.install-modal h2 {
-  max-width: 390px;
-  margin: 0 0 20px;
-  color: #fff;
-  font-size: clamp(1.1rem, 2.4vw, 1.35rem);
-  letter-spacing: -0.04em;
-  line-height: 1.35;
-}
-
-.install-instruction {
-  display: flex;
-  align-items: stretch;
-  gap: 10px;
-  padding: 13px;
-  border-radius: 11px;
-  background: #0b1118;
-}
-
-.install-instruction code {
-  min-width: 0;
-  flex: 1;
-  align-self: center;
-  color: #d8dee6;
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
-}
-
-.copy-button {
-  align-self: center;
-  flex: 0 0 auto;
-  padding: 9px 13px;
-  border: 0;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
-  cursor: pointer;
-  font-size: 11px;
-  font-weight: 800;
-  transition: background 180ms ease;
-}
-
-.copy-button:hover {
-  background: var(--accent-deep);
-}
-
-.copy-status {
-  min-height: 17px;
-  margin: 11px 0 0;
-  color: var(--accent-strong);
-  font-size: 11px;
-}
-
 @media (max-width: 640px) {
   .site-shell {
     padding: 22px 22px 18px;
@@ -547,14 +377,6 @@ h1 em {
     margin-top: 24px;
     font-size: 0.95rem;
     line-height: 1.7;
-  }
-
-  .hero-actions {
-    margin-top: 27px;
-  }
-
-  .button {
-    width: 100%;
   }
 
   .product-preview {
@@ -604,17 +426,6 @@ h1 em {
     line-height: 1.5;
   }
 
-  .install-modal {
-    padding: 28px 20px 24px;
-  }
-
-  .install-instruction {
-    flex-direction: column;
-  }
-
-  .copy-button {
-    width: 100%;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
