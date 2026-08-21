@@ -1,44 +1,45 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness, growing into a fast collection of tools for marketing automation."
+      content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness. Discover and install tools for marketing automation."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#090a0f" />
+    <meta name="theme-color" content="#f5f6f8" />
     <link rel="canonical" href="https://xdylanlong.github.io/dsh-snapmarketing-landing/" />
     <link rel="icon" type="image/png" href="assets/snapmarketing-logo.png" />
     <link rel="apple-touch-icon" href="assets/snapmarketing-logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="dsh-snapmarketing" />
-    <meta property="og:title" content="dsh-snapmarketing · Marketing Automation Plugins" />
-    <meta property="og:description" content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness, growing into a fast collection of tools for marketing automation." />
+    <meta property="og:title" content="dsh-snapmarketing | Marketing Automation Plugins" />
+    <meta property="og:description" content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness. Discover and install tools for marketing automation." />
     <meta property="og:url" content="https://xdylanlong.github.io/dsh-snapmarketing-landing/" />
     <meta property="og:image" content="https://xdylanlong.github.io/dsh-snapmarketing-landing/assets/snapmarketing-logo.png" />
     <meta property="og:image:alt" content="dsh-snapmarketing product logo" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1312" />
     <meta property="og:image:height" content="1199" />
-    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="dsh-snapmarketing · Marketing Automation Plugins" />
-    <meta name="twitter:description" content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness, growing into a fast collection of tools for marketing automation." />
+    <meta name="twitter:title" content="dsh-snapmarketing | Marketing Automation Plugins" />
+    <meta name="twitter:description" content="dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness. Discover and install tools for marketing automation." />
     <meta name="twitter:image" content="https://xdylanlong.github.io/dsh-snapmarketing-landing/assets/snapmarketing-logo.png" />
     <meta name="twitter:image:alt" content="dsh-snapmarketing product logo" />
-    <title>dsh-snapmarketing · Marketing Automation Plugins</title>
+    <title>dsh-snapmarketing | Marketing Automation Plugins</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "dsh-snapmarketing",
         "url": "https://xdylanlong.github.io/dsh-snapmarketing-landing/",
-        "description": "dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness, growing into a fast collection of tools for marketing automation.",
-        "inLanguage": "zh-CN"
+        "description": "dsh-snapmarketing is a marketing-focused plugin hub for DeepSeek Harness. Discover and install tools for marketing automation.",
+        "inLanguage": ["en", "zh-CN"]
       }
     </script>
+    <script src="landing-logic.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -46,77 +47,102 @@
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="/" aria-label="dsh-snapmarketing home">
-          <img
-            class="brand-logo"
-            src="assets/snapmarketing-logo.png"
-            alt="dsh-snapmarketing"
-            width="1312"
-            height="1199"
-            loading="eager"
-            decoding="async"
-          />
+          <span class="brand-mark">
+            <img
+              class="brand-logo"
+              src="assets/snapmarketing-logo.png"
+              alt=""
+              width="1312"
+              height="1199"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
           <span class="brand-name">dsh-snapmarketing</span>
         </a>
         <nav class="header-nav" aria-label="Primary navigation">
-          <a class="header-link" href="https://github.com/xDylanLong/dsh-snapmarketing-landing" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="header-link" href="https://github.com/xDylanLong/dsh-snapmarketing-landing" target="_blank" rel="noreferrer" data-i18n="githubLabel">GitHub</a>
           <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese">中文</button>
         </nav>
       </header>
 
-      <main class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span class="eyebrow-text" data-i18n="eyebrow">DSH / MARKETING PLUGIN HUB</span></p>
-          <h1>
-            <span class="hero-title-product">dsh-snapmarketing</span>
-            <em data-i18n="heroTitle">for marketing automation</em>
-          </h1>
-          <p class="hero-description" data-i18n-html="heroDescription"><strong>dsh-snapmarketing</strong> is a marketing-focused plugin hub for DeepSeek Harness — growing into a fast collection of tools for marketing automation.</p>
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow" data-i18n="eyebrow">DSH / MARKETING PLUGIN HUB</p>
+              <h1 id="hero-title">
+                <span class="hero-title-product">dsh-snapmarketing</span>
+                <span class="hero-title-main" data-i18n="heroTitle">Marketing tools for the work ahead.</span>
+              </h1>
+              <p class="hero-description" data-i18n-html="heroDescription"><strong>dsh-snapmarketing</strong> is a focused plugin hub for DeepSeek Harness. Find useful tools, install them quickly, and keep working in one place.</p>
 
-          <div class="install-command" aria-label="Install command">
-            <code data-command-copy>dsh plugin --profile web add @snapmarketing/dsh-plugin-center</code>
-            <button class="command-copy-button" type="button" data-copy-command data-i18n="commandCopyButton">Copy</button>
+              <div class="install-command" aria-label="Install command">
+                <code data-command-copy>dsh plugin --profile web add @snapmarketing/dsh-plugin-center</code>
+                <button class="command-copy-button" type="button" data-copy-command data-i18n="commandCopyButton">Copy</button>
+              </div>
+              <p class="install-hint" data-i18n="installHint">Then open dsh web, go to Settings, and choose Plugin Market.</p>
+            </div>
+
+            <figure class="product-preview" data-product-preview>
+              <div class="product-preview-topline">
+                <span class="preview-index">01</span>
+                <span class="preview-rule" aria-hidden="true"></span>
+                <span class="preview-type">PRODUCT VIEW</span>
+              </div>
+              <div class="product-preview-window">
+                <img
+                  class="product-preview-image"
+                  src="assets/snapmarketing-product.jpg"
+                  alt="dsh-snapmarketing plugin market inside dsh web settings"
+                  width="2940"
+                  height="1448"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <figcaption class="preview-caption" data-i18n="previewCaption">Plugin Market inside dsh web</figcaption>
+            </figure>
           </div>
-          <p class="install-hint" data-i18n="installHint">Then open dsh web → Settings → Plugin Market.</p>
 
-        </div>
+          <div class="hero-divider" aria-hidden="true"></div>
+        </section>
 
-        <div class="product-preview" aria-label="dsh-snapmarketing product preview">
-          <div class="product-preview-window">
-            <img
-              class="product-preview-image"
-              src="assets/snapmarketing-product.jpg"
-              alt="dsh-snapmarketing plugin market settings"
-              width="2940"
-              height="1448"
-              loading="eager"
-              decoding="async"
-            />
+        <section class="workflow" aria-labelledby="workflow-title">
+          <div class="workflow-intro">
+            <h2 id="workflow-title" data-i18n="workflowTitle">From discovery to workflow</h2>
+            <p data-i18n="workflowDescription">A shorter path from finding a tool to using it in the work already in motion.</p>
           </div>
-        </div>
-
-        <div class="hero-footer">
-          <p class="footer-note" data-i18n="footerNote">A simpler way to bring plugins into your workflow.</p>
-          <ol class="process-list" aria-label="dsh-snapmarketing installation flow">
-            <li class="process-step is-active">
+          <ol class="process-list" data-process-list aria-label="dsh-snapmarketing workflow">
+            <li class="process-step">
               <span class="step-number">01</span>
-              <span class="step-label" data-i18n="stepDiscover">Discover</span>
+              <div>
+                <h3 data-i18n="stepDiscover">Discover</h3>
+                <p data-i18n="stepDiscoverDescription">Find marketing plugins that fit the task in front of you.</p>
+              </div>
             </li>
             <li class="process-step">
               <span class="step-number">02</span>
-              <span class="step-label" data-i18n="stepInstall">Install</span>
+              <div>
+                <h3 data-i18n="stepInstall">Install</h3>
+                <p data-i18n="stepInstallDescription">Copy the command, then open Plugin Market in dsh web.</p>
+              </div>
             </li>
             <li class="process-step">
               <span class="step-number">03</span>
-              <span class="step-label" data-i18n="stepUse">Use</span>
+              <div>
+                <h3 data-i18n="stepUse">Use</h3>
+                <p data-i18n="stepUseDescription">Bring the plugin into the workflow you already have.</p>
+              </div>
             </li>
           </ol>
-        </div>
+        </section>
       </main>
 
       <footer class="site-footer">
-        <span data-i18n="siteFooter">dsh-snapmarketing · Marketing plugins for faster automation.</span>
+        <span data-i18n="siteFooter">dsh-snapmarketing | Marketing plugins for faster automation.</span>
+        <span class="footer-mark" aria-hidden="true">SM</span>
       </footer>
     </div>
-
   </body>
 </html>
